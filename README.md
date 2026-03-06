@@ -71,3 +71,12 @@ The power spectrogram is then converted to decibel scale using:
 
 ```python
 librosa.power_to_db(...)
+```
+
+---
+
+## Note
+
+Not included are the training sets. This set was trained using the GiantSteps-Key dataset.
+As this training set was rather small (~700 samples) SoX was used to create pitch shifter versions of the files to increase sample size.
+Final accuracy achieved was only around 60% as this is still actively being worked on. (Though this is fairly consistent with the paper this model is based on)
